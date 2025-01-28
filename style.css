@@ -1,0 +1,165 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    margin: 10px;
+    background-image: linear-gradient(to right, #e45c2760, #ff4a00, #e45c2760);
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-right: none;
+    text-shadow: 1px 1px 2px #eee;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+#head-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: none;
+}
+#head-text a {
+    text-shadow: 1px 1px 1px #000;
+    color: #700b6b;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h2 {
+    font-size: 60px;
+    margin: 20px 0 25px 0;
+    color: #ff4a00;
+    text-shadow: 1px 3px 2px #000;
+}
+
+iframe {
+    width: 100%;
+    margin: 30px 0 8vh 0;
+    border-radius: 5px;
+    box-shadow: 10px 10px 3px 1px #ff48009c;
+}
+
+.recipe-text {
+    font-size: 24px; 
+    text-shadow: 0 2px 0 #fd895b;
+    font-weight: bold;
+    margin: 8px 0 18px 0;
+}
+
+h3 {
+    text-align: left;
+    font-size: 22px;
+    margin: 20px 0 20px 0;
+    text-decoration: underline #ff48009d;
+}
+
+ul {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    word-spacing: 2px;
+}
+li {margin-top: 1vh;}
+
+button {
+    z-index: 1;
+    background-color: #00000000;
+    border: none;
+    padding: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 20px;
+    position: absolute;
+    top: 80vh;
+}
+button:hover {
+    background-color: #000;
+    color: #ff4a00;
+    text-shadow: 1px 1px #fd895b;
+}
+button:active {opacity: 0.4;} 
+
+#prev-btn {float: left; left: 40px;}
+#next-btn {float: right; right: 40px;}
+
+.recipe-container {
+    float: left;
+    opacity: 0;
+    text-align: center;
+    transition: opacity .2s ease;
+    position: absolute;
+    width: 50%;
+    left: 25vw;
+    margin-top: 50px;
+}
+
+.hidden {display: none;}
+
+.active {
+    position: absolute;
+    display: block;
+    opacity: 1;
+}
+
+footer {
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 90% 0 20px;
+    gap: 2rem;
+    border: 2px solid #ccc;
+    border-bottom: none;
+    padding-right: 20px;
+    word-spacing: 4px;
+}
+#insta-img {
+    width: 180px;
+    height: 180px;
+    transition: .3s;
+}
+#insta-img:hover {
+    scale: 1.05;
+    opacity: 1;
+}
+
+#foot-text {margin: 15px;}
+
+h4 {margin-bottom: 8px;}
+
+#insta-link {
+    color: #aaa;
+    text-decoration: none;
+}
+
+#insta-text {translate: 30px 20px; transition: .4s;}
+#insta-text:hover {color: #fd895b;}
+#insta-text::before {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png);
+    scale: 0.03;
+    translate: -25vw -312px;
+    position: absolute;
+}
