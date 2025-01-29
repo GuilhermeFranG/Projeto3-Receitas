@@ -155,11 +155,20 @@ h4 {margin-bottom: 8px;}
     text-decoration: none;
 }
 
-#insta-text {translate: 30px 20px; transition: .4s;}
+#insta-text {transition: .4s; translate: 30px 20px;}
 #insta-text:hover {color: #fd895b;}
 #insta-text::before {
     content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png);
     scale: 0.03;
     translate: -25vw -312px;
     position: absolute;
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        margin-top: 200vh;
+    }
+    #insta-text::before {
+        translate: -31vw -312px;
+    }
 }
