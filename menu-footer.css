@@ -1,0 +1,116 @@
+header {
+    margin-bottom: 10px;
+    background-image: linear-gradient(to right, #e45c2760, #ff4a00, #e45c2760);
+    width: 100%;
+    padding: 15px 0 0;
+    border: 1px solid #ddd;
+    border-right: none;
+    text-shadow: 1px 1px 2px #eee;
+}
+
+h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+#head-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+#head-text a {
+    text-shadow: 1px 1px 1px #000;
+    color: #700b6b;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    background-color: #000;
+    padding: 8px 0 10px;
+    margin-top: 10px;
+    border-top: 2px solid #ff4a00;
+    border-bottom: 2px solid #ff4a00;
+}
+
+.head-list {transition: .3s;}
+.head-list:hover {scale: 1.2;}
+
+.head-list a {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #ff4a00;
+    color: #fff;
+    font-size: 18px;
+    margin: 6vw;
+    word-spacing: -2px;
+    transition: .3s;
+}
+.head-list a:hover {color: #ff4a00;}
+
+footer {
+    text-align: left;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 250vh 0 20px;
+    gap: 2rem;
+    border: 2px solid #ccc;
+    border-bottom: none;
+    padding-right: 20px;
+    word-spacing: 4px;
+}
+
+#insta-img {
+    width: 180px;
+    height: 180px;
+    transition: .3s;
+}
+
+#insta-img:hover {
+    scale: 1.05;
+    opacity: 1;
+}
+
+#foot-text {
+    margin: 15px;
+}
+
+h4 {
+    margin-bottom: 8px;
+}
+
+#insta-link {
+    color: #aaa;
+    text-decoration: none;
+}
+
+#insta-text {
+    transition: .4s;
+    translate: 30px 20px;
+}
+
+#insta-text:hover {
+    color: #fd895b;
+}
+
+#insta-text::before {
+    content: url(https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/640px-Instagram_icon.png);
+    scale: 0.03;
+    translate: -25vw -312px;
+    position: absolute;
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        margin-top: 275vh;
+    }
+
+    #insta-text::before {
+        translate: -31vw -312px;
+    }
+}
