@@ -19,6 +19,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    margin-top: 30vh;
 }
 
 h2 {
@@ -69,8 +70,8 @@ button {
     cursor: pointer;
     transition: .3s;
     border-radius: 20px;
-    position: absolute;
-    top: 80vh;
+    position: fixed;
+    top: 50%;
 }
 button:hover {
     background-color: #000;
