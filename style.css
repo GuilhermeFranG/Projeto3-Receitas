@@ -19,7 +19,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin-top: 30vh;
+    margin-top: 10vh;
 }
 
 h2 {
@@ -37,7 +37,7 @@ iframe {
 }
 
 .recipe-text {
-    font-size: 24px; 
+    font-size: 24px;
     text-shadow: 0 2px 0 #fd895b;
     font-weight: bold;
     margin: 8px 0 18px 0;
@@ -46,20 +46,55 @@ iframe {
 h3 {
     text-align: left;
     font-size: 22px;
-    margin: 20px 0 20px 0;
+    margin: 15vh 0 20px 0;
     text-decoration: underline #ff48009d;
 }
 
-.ingredients-list, .how-to {
+.ingredients-list,
+.how-to {
     text-align: left;
     font-size: 18px;
     font-weight: 500;
     word-spacing: 2px;
 }
-.ingredients {margin-top: 1vh; transition: .3s; cursor: pointer;}
-.ingredients:hover {scale: 1.2; list-style: none; text-decoration: underline #ff4a00;}
 
-.how-to-item {margin-bottom: 10px;}
+.ingredients {
+    margin-top: 1vh;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.ingredients:hover {
+    scale: 1.2;
+    list-style: none;
+    text-decoration: underline #ff4a00;
+}
+
+.how-to {
+    margin-top: 1vh;
+    padding: 20px;
+    box-shadow: 1px 1px 1px 3px #eee;
+    width: 100%;
+}
+
+td {
+    text-shadow: 1px 1px 2px #ddd;
+    padding: 12px;
+    border: 1px solid #ccc;
+    transition: .3s;
+}
+td:hover {
+    border: 1px solid #ff4800;
+}
+td:nth-child(2) {
+    font-size: 16px;
+}
+
+th, #table-foot {
+    border: 2px solid #000;
+    background-color: #ff4800;
+    padding: 15px 10vh 15px 20px;
+}
 
 button {
     z-index: 1;
@@ -73,15 +108,26 @@ button {
     position: fixed;
     top: 50%;
 }
+
 button:hover {
     background-color: #000;
     color: #ff4a00;
     text-shadow: 1px 1px #fd895b;
 }
-button:active {opacity: 0.4;} 
 
-#prev-btn {float: left; left: 40px;}
-#next-btn {float: right; right: 40px;}
+button:active {
+    opacity: 0.4;
+}
+
+#prev-btn {
+    float: left;
+    left: 40px;
+}
+
+#next-btn {
+    float: right;
+    right: 40px;
+}
 
 .recipe-container {
     float: left;
@@ -94,7 +140,9 @@ button:active {opacity: 0.4;}
     margin-top: 50px;
 }
 
-.hidden {display: none;}
+.hidden {
+    display: none;
+}
 
 .active {
     position: absolute;
