@@ -28,6 +28,7 @@ h1 {
     width: 100%;
     z-index: 3;
     top: 0px;
+    transition: top .3s; /* transição do menu fixo */
 }
 
 .menu {
@@ -62,7 +63,7 @@ footer {
     bottom: 0;
     display: flex;
     flex-direction: row;
-    margin: 250vh 0 20px;
+    margin: 320vh 0 20px;
     gap: 2rem;
     border: 2px solid #ccc;
     border-bottom: none;
@@ -110,12 +111,19 @@ h4 {
     position: absolute;
 }
 
-@media screen and (max-width: 1200px) {
+
+@media screen and (max-width: 1200px){
     footer {
-        margin-top: 275vh;
+        margin-top: 300vh;
     }
 
     #insta-text::before {
-        translate: -31vw -312px;
+        translate: -35vw -312px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #insta-text::before {
+        translate: -50vw -312px;
     }
 }
