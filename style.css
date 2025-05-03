@@ -14,10 +14,6 @@ body {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 2rem;
     margin-top: 10vh;
 }
@@ -30,7 +26,6 @@ h2 {
 }
 
 iframe {
-    width: 100%;
     margin: 30px 0 8vh 0;
     border-radius: 5px;
     box-shadow: 10px 10px 3px 1px #ff48009c;
@@ -130,14 +125,25 @@ button:active {
 }
 
 .recipe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     float: left;
     opacity: 0;
     text-align: center;
     transition: opacity .2s ease;
     position: absolute;
     width: 50%;
-    left: 25vw;
+    right: 25vw;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 1200px) {
+    .recipe-container {
+        right: 30vw;
+        width: 60%;
+    }
 }
 
 .hidden {
